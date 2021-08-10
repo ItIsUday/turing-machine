@@ -26,9 +26,8 @@ def main():
                             })
 
     machine.initialize(get_input())
-    machine.simulate()
 
-    if machine.is_input_accepted():
+    if machine.simulate():
         print("Balanced")
     else:
         print("Not balanced")
